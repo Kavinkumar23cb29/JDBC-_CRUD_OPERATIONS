@@ -12,7 +12,7 @@ public class Class_Vehicle {
                 try {
 
                     Connection con = DriverManager.getConnection(url , user, password);
-                    System.out.println("     VEHICLE MANAGEMENT SYSTEM");
+                    System.out.println("VEHICLE MANAGEMENT SYSTEM");
 
 
                     while (true) {
@@ -76,7 +76,7 @@ public class Class_Vehicle {
 
                                     found = true;
 
-                                    System.out.println("-------------------------");
+                                    System.out.println("*****************");
                                     System.out.println("Vehicle ID      : " + rs2.getInt("vehicle_id"));
                                     System.out.println("Vehicle Model   : " + rs2.getString("vehicle_model"));
                                     System.out.println("Vehicle Company : " + rs2.getString("vehicle_company"));
@@ -157,9 +157,9 @@ public class Class_Vehicle {
 
                                 ResultSet rs5 = ps5.executeQuery();
 
-                                System.out.println("\n--------------------------------------------------------");
+                                System.out.println("\n****************************************************");
                                 System.out.printf("%-10s %-15s %-20s\n", "ID", "MODEL", "COMPANY");
-                                System.out.println("--------------------------------------------------------");
+                                System.out.println("********************************************************");
 
                                 while (rs5.next()) {
 
@@ -177,7 +177,7 @@ public class Class_Vehicle {
                                 con.close();
                                 sc.close();
 
-                                System.out.println("Thank You...");
+                                System.out.println("Thank You.");
                                 return;
 
                             default:
